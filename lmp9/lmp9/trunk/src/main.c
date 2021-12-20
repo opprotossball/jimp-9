@@ -17,6 +17,10 @@ int main(int argc, char ** argv) {
 	printToScreen(b);
 
 	res = eliminate(A,b);
+	if (res != 0) {
+		printf("Uklad sprzeczny\n");
+		return -3;
+	}
 	x = createMatrix(b->r, 1);
 	if (x != NULL) {
 		res = backsubst(x,A,b);

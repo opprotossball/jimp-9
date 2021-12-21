@@ -3,8 +3,17 @@
 
 #include "mat_io.h"
 
+//Wartosc bezwzgledna
+double bezwzgl(double x);
+
 /**
- * Zwraca 0 - elimnacja zakonczona sukcesem
+* Wyznaczanie najwiekszego wspolczynnika
+* w danej kolumnie i zamiana wierszy
+*/
+void met_najw_elem(Matrix *mat, Matrix *b, int i);
+
+/**
+* Zwraca 0 - elimnacja zakonczona sukcesem
  * Zwraca 1 - macierz osobliwa - dzielenie przez 0
  */
 int eliminate(Matrix *mat, Matrix *b);

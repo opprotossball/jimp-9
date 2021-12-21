@@ -10,7 +10,7 @@ int eliminate(Matrix *mat, Matrix *b) {
 	int kolumny = mat->c;
 	for(int i = 0; i < kolumny; i++) {
 		if(mat->data[i][i] == 0) {
-			printf("Macierz osobliwa\n");
+//		printf("Macierz osobliwa\n");
 			return 1;
 		}
 		for(int j = i+1; j < wiersze; j++) {

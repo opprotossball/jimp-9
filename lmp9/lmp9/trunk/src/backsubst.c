@@ -11,9 +11,10 @@ int  backsubst(Matrix *x, Matrix *mat, Matrix *b) {
 	int wiersze = x->r;
 	double sum=0;
 	for (int i=wiersze-1; i>-1; i--) {
-		if (mat->data[i][i]==0)
+		if (mat->data[i][i]==0) {
 			return 1;
-			for (int j=wiersze-1; j>i; j--) 
+		}
+			for (int j=wiersze-1; j>i; j--)
 				sum += (x->data[j][0])*(mat->data[i][j]);
 		x->data[i][0] = (b->data[i][0] - sum)/mat->data[i][i];
 		sum=0;		

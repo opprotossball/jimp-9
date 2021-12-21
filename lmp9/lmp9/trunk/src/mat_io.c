@@ -44,6 +44,19 @@ void printToScreen(Matrix *mat) {
 	printf("]\n");
 }
 
+void printToFile(Matrix *mat, FILE *f) {
+	int i,j;
+	fprintf(f,"[ \n");
+	for (i = 0; i<mat->r; i++) {
+		fprintf(f,"  ");
+		for (j = 0; j < mat->c; j++) {
+			fprintf(f,"%f ", mat->data[i][j]);
+		}
+		fprintf(f,";\n");
+	}
+	fprintf(f,"]\n");
+}
+
 Matrix * createMatrix(int r, int c) {
 		int i;
 		Matrix * mat = (Matrix*) malloc(sizeof(Matrix));

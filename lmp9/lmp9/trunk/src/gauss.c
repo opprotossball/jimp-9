@@ -45,7 +45,7 @@ int eliminate(Matrix *mat, Matrix *b) {
 	for(int i = 0; i < kolumny; i++) {
 		met_najw_elem(mat, b, i);
 		if(mat->data[i][i] == 0) {
-			printf("Macierz osobliwa\n");
+//		printf("Macierz osobliwa\n");
 			return 1;
 		}
 		for(int j = i+1; j < wiersze; j++) {

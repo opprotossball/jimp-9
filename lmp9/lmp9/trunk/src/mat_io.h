@@ -12,6 +12,7 @@ typedef struct _Matrix {
  */
 Matrix * readFromFile(char * fname);
 void printToScreen(Matrix *mat);
+void printToFile(Matrix *mat, FILE *f);
 
 Matrix * createMatrix(int r, int c);
 void freeMatrix(Matrix *mat);

@@ -16,7 +16,7 @@ double bezwzgl(double x) {
   
 void met_najw_elem(Matrix *mat, Matrix *b, int i) {
 	double *tmp = mat->data[i];
-	int ktory;
+	int ktory = i;
 	for(int d = i+1; d < mat->r; d++) {
 		if( bezwzgl(mat->data[d][i]) > bezwzgl(tmp[i]) ) {
 			tmp = mat->data[d];

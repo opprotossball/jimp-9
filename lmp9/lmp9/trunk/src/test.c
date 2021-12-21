@@ -64,7 +64,7 @@ int compare(char *Wynik, char *Out) {
 		chw = fgetc(wynik);
 		cho = fgetc(out);
 	}
-	if (chw == EOF && cho == EOF)
+	if (chw == EOF || cho == EOF)
         return 0;
     else
         return -1;
@@ -89,6 +89,7 @@ int test(char *Macierz, char *Wspolczynniki, char *Wynik, char *Opis) {
 			printf("   Wystąpił błąd!\n");
 		}
 	}
+	return 0;
 }
 
 

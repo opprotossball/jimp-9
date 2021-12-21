@@ -9,12 +9,12 @@
 
 int main(int argc, char ** argv) {
 	if (strcmp(argv[1], "test")==0) {
-		test("A1", "b1", "W1", "O1");
-		test("A2", "b2", "W2", "O2");
-		test("A3", "b3", "W3", "O3");
-		test("A4", "b4", "W4", "O4");
-		test("A5", "b5", "W5", "O5");
-		
+		test("../dane/pliki_testowe/test1/A1", "../dane/pliki_testowe/test1/b1", "../dane/pliki_testowe/test1/W1", "../dane/pliki_testowe/test1/O1");
+		test("../dane/pliki_testowe/test2/A2", "../dane/pliki_testowe/test2/b2", "../dane/pliki_testowe/test2/W2", "../dane/pliki_testowe/test2/O2");
+		test("../dane/pliki_testowe/test3/A3", "../dane/pliki_testowe/test3/b3", "../dane/pliki_testowe/test3/W3", "../dane/pliki_testowe/test3/O3");
+		test("../dane/pliki_testowe/test4/A4", "../dane/pliki_testowe/test4/b4", "../dane/pliki_testowe/test4/W4", "../dane/pliki_testowe/test4/O4");
+		test("../dane/pliki_testowe/test5/A5", "../dane/pliki_testowe/test5/b5", "../dane/pliki_testowe/test5/W5", "../dane/pliki_testowe/test5/O5");	
+
 		return 0;
 	}
 	int res;
